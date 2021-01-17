@@ -1,0 +1,36 @@
+﻿{% extends "layout.html" %}
+
+{% block js %}
+{% endblock %}
+
+{% block title %}
+Delete Photos
+{% endblock %}
+{% block body %}
+
+    <form method="post">
+        <div class="header-div">
+            <h1> DELETE PHOTOS </h1>
+
+                <input class="form-btn delete-btn" type=submit value=Delete />
+        </div>
+        <div class="gallery">
+            {% for item in records%}
+            <div class="image-block">
+                <label class="delete-label" for="{{item[1]}}-checkbox">
+                    <input class="delete-selector" type="checkbox" name="deletes" value="{{item[1]}}" id="{{item[1]}}-checkbox" />
+                    <div class="image-info">
+                        <h3>{{item[0]}}</h3>
+                        <h4> Owner: {{user}}</h4>
+                    </div>
+                    <div class="img-div">
+                        <img class="uploaded-image delete-img" src={{item[1]}} />
+                    </div>
+                </label>
+            </div>
+            {% endfor %}
+
+        </div>
+</form>
+
+{% endblock %}

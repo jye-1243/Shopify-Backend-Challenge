@@ -1,0 +1,23 @@
+﻿{% extends "layout.html" %}
+
+{% block js %}
+<script src="../static/search.js">   </script>
+{% endblock %}
+
+{% block title %}
+Upload new File
+{% endblock %}
+{% block body %}
+<h1>Add Images</h1>
+<form id="add-form" method=post action="/add" enctype=multipart/form-data>
+
+    <div>
+        <input class="inputfile" id="files" type=file name=files[] multiple=multiple data-multiple-caption="">
+        <label for="files" id="file-label">Choose File(s)</label>
+    </div>
+
+    <input id="add-btn" type=submit value=Upload>
+</form>
+
+
+{% endblock %}

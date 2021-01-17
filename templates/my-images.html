@@ -1,0 +1,35 @@
+﻿{% extends "layout.html" %}
+
+{% block js %}{% endblock %}
+
+{% block title %}
+    Image Repository
+{% endblock %}
+
+{% block body %}
+<div class="header-div">
+    <div class="title-div">
+        <h1> My Photos </h1>
+    </div>
+    <div class="search-div">
+        <form action="/" class="form-inline">
+            <input autocomplete="off" autofocus class="search-bar" name="search" placeholder="Find Images by Name" type="text">
+            <button type="submit" class="form-btn"> Search </button>
+        </form>
+    </div>
+</div>
+<div class="gallery">
+
+    {% for item in list%}
+    <div class="image-block">
+        <div class="image-info">
+            <h3>{{item[0]}}</h3>
+            <h4> Owner: {{user}}</h4>
+        </div>
+        <div class="img-div">
+            <img class="uploaded-image" src={{item[1]}} />
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

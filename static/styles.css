@@ -1,0 +1,161 @@
+﻿body
+{
+}
+
+h1 {
+    margin: 10px;
+}
+
+.header-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-div {
+    flex: 1;
+}
+
+.form-inline {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar {
+    width: 80%;
+    margin: 2% 2% 0% 5%;
+}
+
+.form-btn {
+    width: 10%;
+    margin-top: 2%;
+    background: #eeeeee;
+    border: 1px solid black;
+}
+
+.form-btn:hover{
+    background: #cccccc;
+}
+
+.search-div{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.image-block{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.uploaded-image{
+    max-width: 90%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.image-info {
+    height: 26%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.img-div{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    margin-bottom: 2%;
+
+}
+
+.image-block:hover{
+    background: #cdcdff;
+}
+
+.form-div {
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    background: #eeeeee;
+    padding: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+    .inputfile + label {
+        font-size: 2em;
+        color: darkgray;
+        border: 2px solid darkgray;
+        background-color: #fefefe;
+        height: 40%;
+        width: 100%; 
+        margin: auto;
+        text-align: center;
+        padding: 18% 0%;
+        border-radius: 10px;
+    }
+
+
+    .inputfile + label {
+        cursor: pointer; /* "hand" cursor */
+    }
+
+    .inputfile:focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label * {
+        pointer-events: none;
+    }
+
+#add-form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.delete-label {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.delete-btn {
+    float: right;
+    margin-left: 60%;
+    margin-right: 2%;
+    flex: 2;
+    margin-top: 1%;
+}
+
+.delete-img{
+    max-height: 85%;
+}
