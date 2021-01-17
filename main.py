@@ -58,11 +58,17 @@ def index():
     # GET request used to search by name
     search = request.args.get("search")
 
+
+
     # Modify search_query based on if search exists
     sqlite_query = """SELECT DISTINCT name, filepath, user_id FROM images"""
     if search:
-        sqlite_query = sqlite_query + """ WHERE images.name LIKE ?"""
-        cursor.execute(sqlite_query, ("%" + search + "%",))
+        # Search for users or by file name
+
+        sqlite_query = sqlite_query + """ WHERE images.name LIKE ? OR user_id IN (
+                                          SELECT user_id FROM users WHERE username LIKE ?)"""
+        cursor.execute(sqlite_query, ("%" + search + "%", "%" + search + "%"))
+
     else:
         cursor.execute(sqlite_query)
 
