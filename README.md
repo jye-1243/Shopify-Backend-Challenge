@@ -15,11 +15,21 @@ This project also requires SQLite, which can be installed pursuant to these [ins
 ### Installation and Deployment
 1. Clone this [github repository](https://github.com/jye-1243/Shopify-Backend-Challenge)
 2. Navigate to your local folder for the repository
-3. Run `python main.py`
+3. Run `python main.py` in the aforementioned directory
 4. The web app should open in [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## Usage
+When the user first loads the web app, they can see a gallery of the images uploaded by all users. This gallery also has a search function, which allows users to search the database for photos by filename. From there, users can use the Navbar to either log in (if they already have an account) or register as a user in the database. 
+
+Once the user is signed in, they can navigate to various pages via the Navbar. First, they may choose to view a gallery of their photos from the "My Images" tab. They may also elect to add new photos to the repository from the Add page. This is done by clicking on the file upload area and pressing submit. Finally, users may remove photos that they had previously uploaded from the Delete page. Here, the user is presented with a gallery of their own photos from which they may choose a set to delete. However, users cannot remove the images of other users. Finally, the user may log out using the Logout button in the Navbar.
 
 ## Built With
+This project was built with:
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Web Framework
+- [Bootstrap Navbar](https://getbootstrap.com/docs/4.0/components/navbar/) - Bootstrap components
+- [SQLite](https://www.sqlite.org/index.html) - Database
 
 ## Acknowledgements
+Portions of the code in this challenge were inspired by or used in:
+- [CS50 Coursework](https://cs50.harvard.edu/x/2020/tracks/web/finance/)
+- [Osvaldas Valutis](https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/) and his form input styling
