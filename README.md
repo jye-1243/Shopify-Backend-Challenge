@@ -23,6 +23,11 @@ When the user first loads the web app, they can see a gallery of the images uplo
 
 Once the user is signed in, they can navigate to various pages via the Navbar. First, they may choose to view a gallery of their photos from the "My Images" tab. They may also elect to add new photos to the repository from the Add page. This is done by clicking on the file upload area and pressing submit. Finally, users may remove photos that they had previously uploaded from the Delete page. Here, the user is presented with a gallery of their own photos from which they may choose a set to delete. However, users cannot remove the images of other users. Finally, the user may log out using the Logout button in the Navbar.
 
+### Known Bugs
+At times, users may need to refresh a page using Ctrl-Shift-R, as some files upload into the cache and the site does not update accordingly.
+
+Also, in cases where users use particularly weak passwords (eg. '123'), browsers such as Chrome deliver a warning alert asking for passwords to be changed.
+
 ## Built With
 This project was built with:
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Web Framework
