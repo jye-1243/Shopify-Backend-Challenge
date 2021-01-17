@@ -4,7 +4,11 @@ Shopify Summer 2021 Internship Backend Challenge
 
 This web app is for a basic image repository in which users can view and search through a gallery of photos. Additionally, users can log into or register for the web app, which allows them to add and delete their own photos.
 
-### Demo
+### Demo Screenshots
+The main gallery view can be seen here:
+![main gallery](https://github.com/jye-1243/Shopify-Backend-Challenge/blob/master/static/screenshots/gallery.PNG)
+
+Other screenshots viewable [here](https://github.com/jye-1243/Shopify-Backend-Challenge/tree/master/static/screenshots)
 
 ## Getting Started
 
