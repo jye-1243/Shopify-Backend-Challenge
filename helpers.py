@@ -1,6 +1,7 @@
 from functools import wraps
 from flask import g, request, redirect, url_for, session
 
+# From CS50 Flask Assignment
 def login_required(f):
     """
     Decorate routes to require login.
