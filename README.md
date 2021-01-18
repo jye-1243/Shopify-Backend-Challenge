@@ -20,7 +20,7 @@ This project also requires SQLite, which can be installed pursuant to these [ins
 1. Clone this [github repository](https://github.com/jye-1243/Shopify-Backend-Challenge)
 2. Navigate to your local folder for the repository
 3. Run `python main.py` in the aforementioned directory
-4. The web app should open in [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+4. The web app should open in Flask's provided address, usually [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## Usage
 When the user first loads the web app, they can see a gallery of the images uploaded by all users. This gallery also has a search function, which allows users to search the database for photos by filename. From there, users can use the Navbar to either log in (if they already have an account) or register as a user in the database. 
